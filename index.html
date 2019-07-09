@@ -8,50 +8,68 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
-    <div class="jumbotron jumbotron-fluid bg-dark text-danger">
-        <div class="container">
+    <div class="jumbotron jumbotron-fluid clearfix bg-dark text-danger "style="margin-bottom: 0">
+        <div class="container clearfix">
+          <img class="float-right w-50 p-3" src="assets/images/strangerthingstitle.jpeg" alt="title">
           <h1 class="display-4">Trivia Game !!!</h1>
-          <p class="lead">Answer the following true or false questions before the timer runs out.</p>
-          <h2 class="display-4 display-timer">60 seconds</h2>
+          <p class="lead">Answer the following true or false questions before 
+            <br>
+            the timer runs out or hit Submit when finished.</p>
+          <h2 class="display-4 display-timer">30 seconds</h2>
           <button class="btn btn-danger btn-lg start">Start</button>
+          <h3 class="bg-dark text-danger" id="results"></h3>
           
         </div>
-    </div>
-    <form>
-        <div class="form-group">
-          <label for="exampleFormControlInput1">Question 1:</label>
-          <input type="text" class="form-control form-control-lg" id="question1">
-        </div>
-        <div class="form-group">
-          <label for="exampleFormControlSelect1">Select Answer</label>
-          <select class="form-control form-control-lg" id="answer1">
-            <option>True</option>
-            <option>False</option>
-          </select>
-        </div>
-        <div class="form-group">
-            <label for="exampleFormControlInput1">Question 2:</label>
-            <input type="text" class="form-control form-control-lg" id="question2">
+      <form class="bg-dark text-danger">
+          <div class="form-group bg-dark text-danger">
+            <label for="exampleFormControlInput1">Question 1:</label>
+            <p class="form-control form-control-lg" id="question1"></p>
           </div>
-          <div class="form-group">
+          <div class="form-group bg-dark text-danger">
             <label for="exampleFormControlSelect1">Select Answer</label>
-            <select class="form-control form-control-lg" id="answer2">
+            <select class="form-control form-control-lg" id="answer1">
               <option>True</option>
               <option>False</option>
             </select>
           </div>
-          <div class="form-group">
-              <label for="exampleFormControlInput1">Question 3:</label>
-              <input type="text" class="form-control form-control-lg" id="question3">
-          </div>
-          <div class="form-group">
+          <div class="form-group bg-dark text-danger">
+              <label for="exampleFormControlInput1">Question 2:</label>
+              <p class="form-control form-control-lg" id="question2"></p>
+            </div>
+            <div class="form-group bg-dark text-danger">
               <label for="exampleFormControlSelect1">Select Answer</label>
-              <select class="form-control form-control-lg" id="answer3">
+              <select class="form-control form-control-lg" id="answer2">
                 <option>True</option>
                 <option>False</option>
               </select>
-          </div>
-      </form>
+            </div>
+            <div class="form-group bg-dark text-danger">
+                <label for="exampleFormControlInput1">Question 3:</label>
+                <p class="form-control form-control-lg" id="question3"></p>
+            </div>
+            <div class="form-group bg-dark text-danger">
+                <label for="exampleFormControlSelect1">Select Answer</label>
+                <select class="form-control form-control-lg" id="answer3">
+                  <option>True</option>
+                  <option>False</option>
+                </select>
+            </div>
+            <div class="form-group bg-dark text-danger">
+                <label for="exampleFormControlInput1">Question 4:</label>
+                <p class="form-control form-control-lg" id="question4"></p>
+            </div>
+            <div class="form-group bg-dark text-danger">
+                <label for="exampleFormControlSelect1">Select Answer</label>
+                <select class="form-control form-control-lg" id="answer4">
+                  <option>True</option>
+                  <option>False</option>
+                </select>
+            </div>
+        </form>
+        <button class="btn btn-danger btn-lg btn-block submit">Submit</button>
+        <img class="w-100" src="assets/images/strangerthingsposter2.jpeg" alt="poster">
+      </div>
+      
       <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
       <script src="./assets/javascript/app.js"></script>
 </body>
