@@ -29,6 +29,10 @@ function clock() {
 };
 
 function startGame() {
+  clearInterval(timerId);
+  $("#results").empty();
+  correct = 0;
+  incorrect = 0;
   $("#question1").text(question1.question);
   $("#question2").text(question2.question);
   $("#question3").text(question3.question);
